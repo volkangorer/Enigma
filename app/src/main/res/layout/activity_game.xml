@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Game"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/timeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="Time : "
+            android:textColor="#000000"
+            android:textSize="30sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_marginVertical="20dp"
+            android:text="Şarkının ilk 20 saniyesi hızlı olduğu için Instagram platformunda mutlu insanların hikayelerine ekleniyor. Bilmiyorlar ki adam 20 saniyeden sonra ciğerini ortaya koymuş"
+            android:textAlignment="center"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/cevapA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="5dp"
+            android:onClick="answerAonClicked"
+            android:text="CevapA"
+            android:textSize="20dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/cevapB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="5dp"
+            android:onClick="answerBonClicked"
+            android:text="CevapB"
+            android:textSize="20dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/cevapC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="5dp"
+            android:onClick="answerConClicked"
+            android:text="CevapC"
+            android:textSize="20dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/cevapD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="5dp"
+            android:onClick="answerDonClicked"
+            android:text="CevapD"
+            android:textSize="20dp">
+
+        </Button>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

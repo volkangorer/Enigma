@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shadowmain"
+    tools:context=".Home">
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.571">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="40dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="0dp">
+
+            <ImageView
+
+                android:id="@+id/imageView"
+                android:layout_width="180dp"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/profile">
+
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/isim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:text="Merhaba ,******"
+            android:textColor="@color/white"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_weight="1"
+
+            android:text="En Yüksek Skor : 0"
+            android:textColor="@color/white"
+            android:textSize="20dp">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+
+
+            android:id="@+id/startGame"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shadow2"
+            android:drawableTop="@drawable/play2"
+            android:onClick="startOnClicked"
+            android:padding="10dp"
+            android:text="Oyuna Başla"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:typeface="serif" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sıralama"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shadow3"
+            android:drawableTop="@drawable/table"
+            android:onClick="sıralamaOnClicked"
+            android:padding="10dp"
+            android:text="Liderlik"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:typeface="serif" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+        app:layout_constraintVertical_bias="0.22">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/shadow4"
+            android:id="@+id/settings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/settings"
+            android:onClick="settingsOnClicked"
+            android:padding="10dp"
+            android:text="Ayarlar"
+            android:textSize="10dp"
+            android:textColor="@color/white"
+            android:typeface="serif" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/shadow5"
+            android:id="@+id/howPlay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+
+            android:drawableTop="@drawable/help"
+            android:onClick="howPlayOnClicked"
+            android:padding="10dp"
+            android:text="Nasıl Oynanır"
+            android:textSize="10dp"
+            android:typeface="serif"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:text="Created by Volkan Görer"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="italic"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "418138863328",
+    "project_id": "genelkultur-8b73b",
+    "storage_bucket": "genelkultur-8b73b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:418138863328:android:e84781b60aa7b8bdeec285",
+        "android_client_info": {
+          "package_name": "com.volkangorer.genelkltr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "418138863328-ft0o7dv4kqnr2klogu3lkt6il9hc4q8f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuztnOfjq2p3DjgmleC5KAHi3k5RsQWLU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "418138863328-ft0o7dv4kqnr2klogu3lkt6il9hc4q8f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
